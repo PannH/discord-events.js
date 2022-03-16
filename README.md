@@ -16,7 +16,7 @@ npm install discord-events
 ## 📚 Documentation
 > You can find below the list of all the events that **discord-events** gives to your client and how to use them.
 
-## <details><summary>Channel Updates</summary>
+<details><summary><h2>Channel Updates</h2></summary>
 ### channelNameUpdate *(extends channelUpdate)*
 📡 Emitted when a channel's name is updated.
 
