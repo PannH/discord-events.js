@@ -16,7 +16,7 @@ npm install discord-events
 ## 📚 Documentation
 > You can find below the list of all the events that **discord-events** gives to your client and how to use them.
 
-## Channel Updates
+<details><summary>## Channel Updates</summary>
 ### channelNameUpdate *(extends channelUpdate)*
 📡 Emitted when a channel's name is updated.
 
@@ -175,6 +175,7 @@ client.on('channelBitrateUpdate', (channel, oldBitrate, newBitrate) => {
 	console.log(`A voice channel's bitrate has been updated: ${oldBitrate} => ${newBitrate}`);
 });
 ```
+</details>
 
 ## Emoji Updates
 
