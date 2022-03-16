@@ -15,6 +15,28 @@ npm install discord-events
 
 ## 📚 Documentation
 > You can find below the list of all the events that **discord-events** gives to your client and how to use them.
+> *Click on the name to expand the events.*
+
+### Usage Example
+```js
+const { Client } = require('discord.js');
+const events     = require('discord-events');
+
+const client = new Client({intents: 32767}); // 32767 => ALL intents
+
+// Init the package, otherwise the events will not be emitted.
+events.init(client);
+
+client.on('ready', () => {
+   console.log(`Logged in as ${client.user.username}`);
+});
+
+client.on('channelNameUpdate', (channel, oldName, newName) => {
+	console.log(`A channel's name has been updated: "${oldName}" => "${newName}"`);
+});
+
+// Check the other events below.
+```
 
 <details><summary><strong>Channel Updates <i>(extends channelUpdate)</i></strong></summary><br/>
 <h3><strong>channelNameUpdate</strong></h3><br/>
