@@ -17,7 +17,7 @@ npm install discord-events
 > You can find below the list of all the events that **discord-events** gives to your client and how to use them.
 
 <details><summary><strong>Channel Updates <i>(extends channelUpdate)</i></strong></summary><br/>
-<strong>channelNameUpdate</strong>
+<strong>channelNameUpdate</strong><br/>
 📡 Emitted when a channel's name is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -34,7 +34,7 @@ client.on('channelNameUpdate', (channel, oldName, newName) => {
 ```
 ---
 
-<strong>channelParentUpdate</strong>
+<strong>channelParentUpdate</strong><br/>
 📡 Emitted when a channel's parent is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -52,7 +52,7 @@ client.on('channelParentUpdate', (channel, oldParent, newParent) => {
 
 ---
 
-<strong>channelPermissionOverwritesUpdate</strong>
+<strong>channelPermissionOverwritesUpdate</strong><br/>
 📡 Emitted when the permissions of a channel are updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -71,7 +71,7 @@ client.on('channelPermissionOverwritesUpdate', (channel, oldPermissions, newPerm
 
 ---
 
-<strong>channelNsfwStateUpdate</strong>
+<strong>channelNsfwStateUpdate</strong><br/>
 📡 Emitted when someone enable/disable the "Age-Restricted Channel" option for a channel.
 
 | **Parameter** | **Type** | **Description** |
@@ -88,7 +88,7 @@ client.on('channelNsfwStateUpdate', (channel, nsfw) => {
 
 ---
 
-<strong>channelRateLimitUpdate</strong>
+<strong>channelRateLimitUpdate</strong><br/>
 📡Emitted when a channel's slowmode is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -106,7 +106,7 @@ client.on('channelRateLimitUpdate', (channel, oldRateLimit, newRateLimit) => {
 
 ---
 
-<strong>channelTopicUpdate</strong>
+<strong>channelTopicUpdate</strong><br/>
 📡 Emitted when a channel's topic is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -124,7 +124,7 @@ client.on('channelTopicUpdate', (channel, oldTopic, newTopic) => {
 
 ---
 
-<strong>channelRtcRegionUpdate</strong>
+<strong>channelRtcRegionUpdate</strong><br/>
 📡 Emitted when a voice channel's RTC region is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -142,7 +142,7 @@ client.on('channelRtcRegionUpdate', (channel, oldRtcRegion, newRtcRegion) => {
 
 ---
 
-<strong>channelUserLimitUpdate</strong>
+<strong>channelUserLimitUpdate</strong><br/>
 📡 Emitted when a voice channel's user limit is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -160,7 +160,7 @@ client.on('channelUserLimitUpdate', (channel, oldUserLimit, newUserLimit) => {
 
 ---
 
-<strong>channelBitrateUpdate</strong>
+<strong>channelBitrateUpdate</strong><br/>
 📡 Emitted when a voice channel's bitrate is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -178,7 +178,7 @@ client.on('channelBitrateUpdate', (channel, oldBitrate, newBitrate) => {
 </details>
 
 <details><summary><strong>Emoji Updates <i>(extends emojiUpdate)</i></strong></summary><br/>
-<strong>emojiNameUpdate</strong>
+<strong>emojiNameUpdate</strong><br/>
 📡 Emitted when an emoji's name is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -196,7 +196,7 @@ client.on('emojiNameUpdate', (emoji, oldName, newName) => {
 </details>
 
 <details><summary><strong>Guild Member Updates <i>(extends guildMemberUpdate)</i></strong></summary><br/>
-<strong>guildMemberNicknameUpdate</strong>
+<strong>guildMemberNicknameUpdate</strong><br/>
 📡 Emitted when a guild member's nickname is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -214,7 +214,7 @@ client.on('guildMemberNicknameUpdate', (member, oldNickname, newNickname) => {
 
 ---
 
-<strong>guildMemberBoostStart</strong>
+<strong>guildMemberBoostStart</strong><br/>
 📡 Emitted when a guild member start boosting the server.
 
 | **Parameter** | **Type** | **Description** |
@@ -230,7 +230,7 @@ client.on('guildMemberBoostStart', (member) => {
 
 ---
 
-<strong>guildMemberBoostStop</strong>
+<strong>guildMemberBoostStop</strong><br/>
 📡 Emitted when a guild member stop boosting the server.
 
 | **Parameter** | **Type** | **Description** |
@@ -246,7 +246,7 @@ client.on('guildMemberBoostStop', (member) => {
 
 ---
 
-<strong>guildMemberTimeout</strong>
+<strong>guildMemberTimeout</strong><br/>
 📡 Emitted when a guild member get timed out.
 
 | **Parameter** | **Type** | **Description** |
@@ -262,7 +262,7 @@ client.on('guildMemberTimeout', (member) => {
 
 ---
 
-<strong>guildMemberTimeoutRemove</strong>
+<strong>guildMemberTimeoutRemove</strong><br/>
 📡 Emitted when a guild member's timeout is removed.
 
 | **Parameter** | **Type** | **Description** |
@@ -278,7 +278,7 @@ client.on('guildMemberTimeoutRemove', (member) => {
 
 ---
 
-<strong>guildMemberRoleAdd</strong>
+<strong>guildMemberRoleAdd</strong><br/>
 📡 Emitted when a role is added to a guild member.
 
 | **Parameter** | **Type** | **Description** |
@@ -295,7 +295,7 @@ client.on('guildMemberRoleAdd', (member, role) => {
 </details>
 
 <details><summary><strong>Guild Updates <i>(extends guildUpdate)</i></strong></summary><br/>
-<strong>guildBannerUpdate</strong>
+<strong>guildBannerUpdate</strong><br/>
 📡 Emitted when a guild's banned is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -313,7 +313,7 @@ client.on('guildBannerUpdate', (guild, oldBannerURL, newBannerURL) => {
 
 ---
 
-<strong>guildDescriptionUpdate</strong>
+<strong>guildDescriptionUpdate</strong><br/>
 📡 Emitted when a guild's description is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -331,7 +331,7 @@ client.on('guildDescriptionUpdate', (guild, oldDescription, newDescription) => {
 
 ---
 
-<strong>guildIconUpdate</strong>
+<strong>guildIconUpdate</strong><br/>
 📡 Emitted when a guild's icon is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -349,7 +349,7 @@ client.on('guildIconUpdate', (guild, oldIconURL, newIconURL) => {*
 
 ---
 
-<strong>guildNameUpdate</strong>
+<strong>guildNameUpdate</strong><br/>
 📡 Emitted when a guild's name is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -367,7 +367,7 @@ client.on('guildNameUpdate', (guild, oldName, newName) => {
 
 --- 
 
-<strong>guildMfaLevelUpdate</strong>
+<strong>guildMfaLevelUpdate</strong><br/>
 📡 Emitted when a guild's MFA level is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -385,7 +385,7 @@ client.on('guildMfaLevelUpdate', (guild, oldMfaLevel, newMfaLevel) => {
 
 ---
 
-<strong>guildNsfwLevelUpdate</strong>
+<strong>guildNsfwLevelUpdate</strong><br/>
 📡 Emitted when a guild's NSFW level is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -403,7 +403,7 @@ client.on('guildNsfwLevelUpdate', (guild, oldNsfwLevel, newNsfwLevel) => {
 
 ---
 
-<strong>guildAfkChannelUpdate</strong>
+<strong>guildAfkChannelUpdate</strong><br/>
 📡 Emitted when a guild's AFK channel is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -421,7 +421,7 @@ client.on('guildAfkChannelUpdate', (guild, oldAfkChannel, newAfkChannel) => {
 
 ---
 
-<strong>guildOwnerUpdate</strong>
+<strong>guildOwnerUpdate</strong><br/>
 📡 Emitted when a guild's owner transfers the ownership.
 
 | **Parameter** | **Type** | **Description** |
@@ -439,7 +439,7 @@ client.on('guildOwnerUpdate', (guild, oldOwner, newOwner) => {
 
 ---
 
-<strong>guildRulesChannelUpdate</strong>
+<strong>guildRulesChannelUpdate</strong><br/>
 📡 Emitted when a guild's rules channel is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -456,7 +456,7 @@ client.on('guildRulesChannelUpdate', (guild, oldRulesChannel, newRulesChannel) =
 ```
 ---
 
-<strong>guildSystemChannelUpdate</strong>
+<strong>guildSystemChannelUpdate</strong><br/>
 📡 Emitted when a guild's system channel is updated.
 
 | **Parameter** | **Type** | **Description** |
@@ -474,7 +474,7 @@ client.on('guildSystemChannelUpdate', (guild, oldSystemChannel, newSystemChannel
 
 ---
 
-<strong>guildVerified</strong>
+<strong>guildVerified</strong><br/>
 📡 Emitted when a guild gets verified.
 
 | **Parameter** | **Type** | **Description** |
@@ -490,7 +490,7 @@ client.on('guildVerified', (guild) => {
 
 ---
 
-<strong>guildPartnered</strong>
+<strong>guildPartnered</strong><br/>
 📡 Emitted when a guild gets verified.
 
 | **Parameter** | **Type** | **Description** |
