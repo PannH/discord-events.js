@@ -202,8 +202,8 @@ client.on('emojiNameUpdate', (emoji, oldName, newName) => {
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
 | member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member whose nickname has been updated. |
-| oldNickname | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old guild member's nickname. |
-| newNickname | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new guild member's nickname. |
+| oldNickname | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old guild member's nickname. |
+| newNickname | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new guild member's nickname. |
 
 **Example :**
 ```js
@@ -518,6 +518,44 @@ client.on('guildVerified', (guild) => {
 ```js
 client.on('guildPartnered', (guild) => {
    console.log(`The guild "${guild.name}" has been partnered.`);
+});
+```
+</details>
+
+
+<details><summary><strong>Message Update <i>(extends messageUpdate)</i></strong></summary><br/>
+<h3><strong>messageContentUpdate</strong></h3><br/>
+📡 Emitted when a message's content is updated.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| message | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | The message that has been edited. |
+| oldContent | [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old message's content. |
+| newContent | [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new message's content. |
+
+**Example :**
+```js
+client.on('messageContentUpdate', (message, oldContent, newContent) => {
+   console.log(`A message has been edited in #${message.channel.name} channel: "${oldContent}" => "${newContent}"`);
+});
+```
+
+---
+
+<h3><strong>messageAttachmentsUpdate</strong></h3><br/>
+📡 Emitted when the attachments of a message are updated.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| message | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | The message that has been edited. |
+| oldAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old message's content. |
+| newAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new message's content. |
+
+**Example :**
+```js
+client.on('messageAttachmentsUpdate', (message, oldAttachments, newAttachments) => {
+   console.log(`The attachments of a message have been updated :`);
+   console.log(oldAttachments, newAttachments);
 });
 ```
 </details>
