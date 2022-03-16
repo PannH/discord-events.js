@@ -523,7 +523,7 @@ client.on('guildPartnered', (guild) => {
 </details>
 
 
-<details><summary><strong>Message Update <i>(extends messageUpdate)</i></strong></summary><br/>
+<details><summary><strong>Message Updates <i>(extends messageUpdate)</i></strong></summary><br/>
 <h3><strong>messageContentUpdate</strong></h3><br/>
 📡 Emitted when a message's content is updated.
 
@@ -548,14 +548,87 @@ client.on('messageContentUpdate', (message, oldContent, newContent) => {
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
 | message | [Message](https://discord.js.org/#/docs/discord.js/stable/class/Message) | The message that has been edited. |
-| oldAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old message's content. |
-| newAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new message's content. |
+| oldAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old attachments of the message. |
+| newAttachments | [Collection](https://discord.js.org/#/docs/collection/main/class/Collection)<[Snowflake](https://discord.js.org/#/docs/discord.js/stable/typedef/Snowflake), [MessageAttachment](https://discord.js.org/#/docs/discord.js/stable/class/MessageAttachment)> \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new attachments of the message. |
 
 **Example :**
 ```js
 client.on('messageAttachmentsUpdate', (message, oldAttachments, newAttachments) => {
    console.log(`The attachments of a message have been updated :`);
    console.log(oldAttachments, newAttachments);
+});
+```
+</details>
+
+<details><summary><strong>Presence Updates <i>(extends presenceUpdate)</i></strong></summary><br/>
+<h3><strong>guildMemberPresenceStatusUpdate</strong></h3><br/>
+📡 Emitted when a guild member's status is updated.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member whose status has been updated. |
+| oldStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The old guild member's status. |
+| newStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The new guild member's status. |
+
+**Example :**
+```js
+client.on('guildMemberPresenceStatusUpdate', (member, oldStatus, newStatus) => {
+   console.log(`A guild member's status has been updated: ${oldStatus} => ${newStatus}`);
+});
+```
+
+---
+
+<h3><strong>guildMemberOnline</strong></h3><br/>
+📡 Emitted when a guild member's goes online (`online`, `idle`, `dnd`).
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who is now online. |
+| oldStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The old guild member's status. |
+| newStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The new guild member's status. |
+
+**Example :**
+```js
+client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
+   console.log(`A guild member is now online (${newStatus})`);
+});
+```
+
+---
+
+<h3><strong>guildMemberOffline</strong></h3><br/>
+📡 Emitted when a guild member's goes offline.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who is now offline. |
+| oldStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The old guild member's status. |
+| newStatus | [PresenceStatus](https://discord.js.org/#/docs/discord.js/stable/typedef/PresenceStatus) | The new guild member's status. |
+
+**Example :**
+```js
+client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
+   console.log(`A guild member is now online (${newStatus})`);
+});
+```
+
+---
+
+<h3><strong>guildMemberActivitiesUpdate</strong></h3><br/>
+📡 Emitted when a guild member's goes offline.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member whose activites have been updated. |
+| oldActivites | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Activity](https://discord.js.org/#/docs/discord.js/stable/class/Activity)> | The old guild member's activites. |
+| newActivites | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Activity](https://discord.js.org/#/docs/discord.js/stable/class/Activity)> | The new guild member's activities. |
+
+**Example :**
+```js
+client.on('guildMemberActivitiesUpdate', (member, oldActivites, newActivites) => {
+   console.log(`The activites of a guild member have been updated :`);
+   console.log(oldActivites, newActivites);
 });
 ```
 </details>
