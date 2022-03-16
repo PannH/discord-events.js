@@ -18,7 +18,7 @@ npm install discord-events
 
 <details><summary><strong>Channel Updates <i>(extends channelUpdate)</i></strong></summary><br/>
 <h3><strong>channelNameUpdate</strong></h3><br/>
-📡 Emitted when a channel's name is updated.
+<h4>📡 Emitted when a channel's name is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ client.on('channelNameUpdate', (channel, oldName, newName) => {
 ---
 
 <h3><strong>channelParentUpdate</strong></h3><br/>
-📡 Emitted when a channel's parent is updated.
+<h4>📡 Emitted when a channel's parent is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ client.on('channelParentUpdate', (channel, oldParent, newParent) => {
 ---
 
 <h3><strong>channelPermissionOverwritesUpdate</strong></h3><br/>
-📡 Emitted when the permissions of a channel are updated.
+<h4>📡 Emitted when the permissions of a channel are updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ client.on('channelPermissionOverwritesUpdate', (channel, oldPermissions, newPerm
 ---
 
 <h3><strong>channelNsfwStateUpdate</strong></h3><br/>
-📡 Emitted when someone enable/disable the "Age-Restricted Channel" option for a channel.
+<h4>📡 Emitted when someone enable/disable the "Age-Restricted Channel" option for a channel.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -89,7 +89,7 @@ client.on('channelNsfwStateUpdate', (channel, nsfw) => {
 ---
 
 <h3><strong>channelRateLimitUpdate</strong></h3><br/>
-📡Emitted when a channel's slowmode is updated.
+<h4>📡Emitted when a channel's slowmode is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -107,7 +107,7 @@ client.on('channelRateLimitUpdate', (channel, oldRateLimit, newRateLimit) => {
 ---
 
 <h3><strong>channelTopicUpdate</strong></h3><br/>
-📡 Emitted when a channel's topic is updated.
+<h4>📡 Emitted when a channel's topic is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ client.on('channelTopicUpdate', (channel, oldTopic, newTopic) => {
 ---
 
 <h3><strong>channelRtcRegionUpdate</strong></h3><br/>
-📡 Emitted when a voice channel's RTC region is updated.
+<h4>📡 Emitted when a voice channel's RTC region is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ client.on('channelRtcRegionUpdate', (channel, oldRtcRegion, newRtcRegion) => {
 ---
 
 <h3><strong>channelUserLimitUpdate</strong></h3><br/>
-📡 Emitted when a voice channel's user limit is updated.
+<h4>📡 Emitted when a voice channel's user limit is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -161,7 +161,7 @@ client.on('channelUserLimitUpdate', (channel, oldUserLimit, newUserLimit) => {
 ---
 
 <h3><strong>channelBitrateUpdate</strong></h3><br/>
-📡 Emitted when a voice channel's bitrate is updated.
+<h4>📡 Emitted when a voice channel's bitrate is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -179,7 +179,7 @@ client.on('channelBitrateUpdate', (channel, oldBitrate, newBitrate) => {
 
 <details><summary><strong>Emoji Updates <i>(extends emojiUpdate)</i></strong></summary><br/>
 <h3><strong>emojiNameUpdate</strong></h3><br/>
-📡 Emitted when an emoji's name is updated.
+<h4>📡 Emitted when an emoji's name is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -197,7 +197,7 @@ client.on('emojiNameUpdate', (emoji, oldName, newName) => {
 
 <details><summary><strong>Guild Member Updates <i>(extends guildMemberUpdate)</i></strong></summary><br/>
 <h3><strong>guildMemberNicknameUpdate</strong></h3><br/>
-📡 Emitted when a guild member's nickname is updated.
+<h4>📡 Emitted when a guild member's nickname is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -215,7 +215,7 @@ client.on('guildMemberNicknameUpdate', (member, oldNickname, newNickname) => {
 ---
 
 <h3><strong>guildMemberBoostStart</strong></h3><br/>
-📡 Emitted when a guild member start boosting the server.
+<h4>📡 Emitted when a guild member start boosting the server.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -231,7 +231,7 @@ client.on('guildMemberBoostStart', (member) => {
 ---
 
 <h3><strong>guildMemberBoostStart</strong></h3><br/>
-📡 Emitted when a guild member stop boosting the server.
+<h4>📡 Emitted when a guild member stop boosting the server.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -247,7 +247,7 @@ client.on('guildMemberBoostStop', (member) => {
 ---
 
 <h3><strong>guildMemberTimeout</strong></h3><br/>
-📡 Emitted when a guild member get timed out.
+<h4>📡 Emitted when a guild member get timed out.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -263,7 +263,7 @@ client.on('guildMemberTimeout', (member) => {
 ---
 
 <h3><strong>guildMemberTimeoutRemove</strong></h3><br/>
-📡 Emitted when a guild member's timeout is removed.
+<h4>📡 Emitted when a guild member's timeout is removed.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -279,7 +279,7 @@ client.on('guildMemberTimeoutRemove', (member) => {
 ---
 
 <h3><strong>guildMemberRoleAdd</strong></h3><br/>
-📡 Emitted when a role is added to a guild member.
+<h4>📡 Emitted when a role is added to a guild member.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -296,7 +296,7 @@ client.on('guildMemberRoleAdd', (member, role) => {
 ---
 
 <h3><strong>guildMemberRoleRemove</strong></h3><br/>
-📡 Emitted when a role is added to a guild member.
+<h4>📡 Emitted when a role is added to a guild member.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -313,7 +313,7 @@ client.on('guildMemberRoleRemove', (member, role) => {
 
 <details><summary><strong>Guild Updates <i>(extends guildUpdate)</i></strong></summary><br/>
 <h3><strong>guildBannerUpdate</strong></h3><br/>
-📡 Emitted when a guild's banned is updated.
+<h4>📡 Emitted when a guild's banned is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ client.on('guildBannerUpdate', (guild, oldBannerURL, newBannerURL) => {
 ---
 
 <h3><strong>guildDescriptionUpdate</strong></h3><br/>
-📡 Emitted when a guild's description is updated.
+<h4>📡 Emitted when a guild's description is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -349,7 +349,7 @@ client.on('guildDescriptionUpdate', (guild, oldDescription, newDescription) => {
 ---
 
 <h3><strong>guildIconUpdate</strong></h3><br/>
-📡 Emitted when a guild's icon is updated.
+<h4>📡 Emitted when a guild's icon is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -367,7 +367,7 @@ client.on('guildIconUpdate', (guild, oldIconURL, newIconURL) => {*
 ---
 
 <h3><strong>guildNameUpdate</strong></h3><br/>
-📡 Emitted when a guild's name is updated.
+<h4>📡 Emitted when a guild's name is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -385,7 +385,7 @@ client.on('guildNameUpdate', (guild, oldName, newName) => {
 --- 
 
 <h3><strong>guildMfaLevelUpdate</strong></h3><br/>
-📡 Emitted when a guild's MFA level is updated.
+<h4>📡 Emitted when a guild's MFA level is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -403,7 +403,7 @@ client.on('guildMfaLevelUpdate', (guild, oldMfaLevel, newMfaLevel) => {
 ---
 
 <h3><strong>guildNsfwLevelUpdate</strong></h3><br/>
-📡 Emitted when a guild's NSFW level is updated.
+<h4>📡 Emitted when a guild's NSFW level is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -421,7 +421,7 @@ client.on('guildNsfwLevelUpdate', (guild, oldNsfwLevel, newNsfwLevel) => {
 ---
 
 <h3><strong>guildAfkChannelUpdate</strong></h3><br/>
-📡 Emitted when a guild's AFK channel is updated.
+<h4>📡 Emitted when a guild's AFK channel is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -439,7 +439,7 @@ client.on('guildAfkChannelUpdate', (guild, oldAfkChannel, newAfkChannel) => {
 ---
 
 <h3><strong>guildOwnerUpdate</strong></h3><br/>
-📡 Emitted when a guild's owner transfers the ownership.
+<h4>📡 Emitted when a guild's owner transfers the ownership.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -457,7 +457,7 @@ client.on('guildOwnerUpdate', (guild, oldOwner, newOwner) => {
 ---
 
 <h3><strong>guildRulesChannelUpdate</strong></h3><br/>
-📡 Emitted when a guild's rules channel is updated.
+<h4>📡 Emitted when a guild's rules channel is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -474,7 +474,7 @@ client.on('guildRulesChannelUpdate', (guild, oldRulesChannel, newRulesChannel) =
 ---
 
 <h3><strong>guildSystemChannelUpdate</strong></h3><br/>
-📡 Emitted when a guild's system channel is updated.
+<h4>📡 Emitted when a guild's system channel is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -492,7 +492,7 @@ client.on('guildSystemChannelUpdate', (guild, oldSystemChannel, newSystemChannel
 ---
 
 <h3><strong>guildVerified</strong></h3><br/>
-📡 Emitted when a guild gets verified.
+<h4>📡 Emitted when a guild gets verified.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -508,7 +508,7 @@ client.on('guildVerified', (guild) => {
 ---
 
 <h3><strong>guildPartnered</strong></h3><br/>
-📡 Emitted when a guild gets verified.
+<h4>📡 Emitted when a guild gets verified.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -525,7 +525,7 @@ client.on('guildPartnered', (guild) => {
 
 <details><summary><strong>Message Updates <i>(extends messageUpdate)</i></strong></summary><br/>
 <h3><strong>messageContentUpdate</strong></h3><br/>
-📡 Emitted when a message's content is updated.
+<h4>📡 Emitted when a message's content is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -543,7 +543,7 @@ client.on('messageContentUpdate', (message, oldContent, newContent) => {
 ---
 
 <h3><strong>messageAttachmentsUpdate</strong></h3><br/>
-📡 Emitted when the attachments of a message are updated.
+<h4>📡 Emitted when the attachments of a message are updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -562,7 +562,7 @@ client.on('messageAttachmentsUpdate', (message, oldAttachments, newAttachments) 
 
 <details><summary><strong>Presence Updates <i>(extends presenceUpdate)</i></strong></summary><br/>
 <h3><strong>guildMemberPresenceStatusUpdate</strong></h3><br/>
-📡 Emitted when a guild member's status is updated.
+<h4>📡 Emitted when a guild member's status is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -580,7 +580,7 @@ client.on('guildMemberPresenceStatusUpdate', (member, oldStatus, newStatus) => {
 ---
 
 <h3><strong>guildMemberOnline</strong></h3><br/>
-📡 Emitted when a guild member goes online ('online', 'idle', 'dnd').
+<h4>📡 Emitted when a guild member goes online ('online', 'idle', 'dnd').</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -598,7 +598,7 @@ client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
 ---
 
 <h3><strong>guildMemberOffline</strong></h3><br/>
-📡 Emitted when a guild member goes offline.
+<h4>📡 Emitted when a guild member goes offline.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -616,7 +616,7 @@ client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
 ---
 
 <h3><strong>guildMemberActivitiesUpdate</strong></h3><br/>
-📡 Emitted when the activites of a guild member are updated.
+<h4>📡 Emitted when the activites of a guild member are updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -635,7 +635,7 @@ client.on('guildMemberActivitiesUpdate', (member, oldActivites, newActivites) =>
 
 <details><summary><strong>Role Updates <i>(extends roleUpdate)</i></strong></summary><br/>
 <h3><strong>roleColorUpdate</strong></h3><br/>
-📡 Emitted when a role's color is updated.
+<h4>📡 Emitted when a role's color is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -653,7 +653,7 @@ client.on('roleColorUpdate', (role, oldHexColor, newHexColor) => {
 ---
 
 <h3><strong>roleHoistUpdate</strong></h3><br/>
-📡 Emitted when a role "hoist" option is enabled/disabled.
+<h4>📡 Emitted when a role "hoist" option is enabled/disabled.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -670,7 +670,7 @@ client.on('roleHoistUpdate', (role, hoist) => {
 ---
 
 <h3><strong>roleMentionableUpdate</strong></h3><br/>
-📡 Emitted when a role "mentionable" option is enabled/disabled.
+<h4>📡 Emitted when a role "mentionable" option is enabled/disabled.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -718,6 +718,410 @@ client.on('roleIconUpdate', (role, oldIconURL, newIconURL) => {
 client.on('rolePermissionsUpdate', (role, oldPermissions, newPermissions) => {
    console.log('The permissions of a role have been updated :');
    console.log(oldPermissions, newPermissions)
+});
+```
+</details>
+
+<details><summary><strong>Sticker Updates <i>(extends stickerUpdate)</i></strong></summary><br/>
+<h3><strong>stickerNameUpdate</strong></h3><br/>
+<h4>📡 Emitted when a sticker's name is updated.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| sticker | [Sticker](https://discord.js.org/#/docs/discord.js/stable/class/Sticker) | The role whose permissions have been updated. |
+| oldName | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old sticker's name. |
+| newName | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new sticker's name. |
+
+**Example :**
+```js
+client.on('stickerNameUpdate', (sticker, oldName, newName) => {
+   console.log(`A sticker's name has been updated: "${oldName}" => "${newName}"`);
+});
+```
+</details>
+
+<details><summary><strong>Thread Member Add/Remove <i>(extends threadMembersUpdate)</i></strong></summary><br/>
+<h3><strong>threadMemberAdd</strong></h3><br/>
+<h4>📡 Emitted when a guild member is added to a thread.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| thread | [ThreadChannel](https://discord.js.org/#/docs/discord.js/stable/class/ThreadChannel) | The thread where the guild member has been added. |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been added to the thread. |
+
+**Example :**
+```js
+client.on('threadMemberAdd', (thread, member) => {
+   console.log(`${member.user.tag} has been added to a thread.`);
+});
+```
+
+---
+
+<h3><strong>threadMemberRemove</strong></h3><br/>
+<h4>📡 Emitted when a guild member is removed from a thread.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| thread | [ThreadChannel](https://discord.js.org/#/docs/discord.js/stable/class/ThreadChannel) | The thread from where the guild member has been removed. |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been removed from the thread. |
+
+**Example :**
+```js
+client.on('threadMemberRemove', (thread, member) => {
+   console.log(`${member.user.tag} has been removed from a thread.`);
+});
+```
+</details>
+
+<details><summary><strong>Thread Archive/Unarchive <i>(extends threadUpdate)</i></strong></summary><br/>
+<h3><strong>threadArchived</strong></h3><br/>
+<h4>📡 Emitted when a thread is archived.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| thread | [ThreadChannel](https://discord.js.org/#/docs/discord.js/stable/class/ThreadChannel) | The thread that has been archived. |
+
+**Example :**
+```js
+client.on('threadArchived', (thread) => {
+   console.log(`The thread #${thread.name} has been archived.`);
+});
+```
+
+---
+
+<h3><strong>threadUnarchived</strong></h3><br/>
+<h4>📡 Emitted when a thread is unarchived.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| thread | [ThreadChannel](https://discord.js.org/#/docs/discord.js/stable/class/ThreadChannel) | The thread that has been unarchived. |
+
+**Example :**
+```js
+client.on('threadUnarchived', (thread) => {
+   console.log(`The thread #${thread.name} has been unarchived.`);
+});
+```
+</details>
+
+<details><summary><strong>User Updates <i>(extends userUpdate)</i></strong></summary><br/>
+<h3><strong>userAvatarUpdate</strong></h3><br/>
+<h4>📡 Emitted when a user's avatar is updated.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| guild | [BaseGuild](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuild) | The guild where the user is. |
+| user | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | The user whose avatar has been updated. |
+| oldAvatarURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old user's avatar URL. |
+| newAvatarURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new user's avatar URL. |
+
+**Example :**
+```js
+client.on('userAvatarUpdate', (guild, user, oldAvatarURL, newAvatarURL) => {
+   console.log(`A user's avatar has been updated: ${oldAvatarURL} => ${newAvatarURL}`);
+});
+```
+
+---
+
+<h3><strong>userBannerUpdate</strong></h3><br/>
+<h4>📡 Emitted when a user's banner is updated.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| guild | [BaseGuild](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuild) | The guild where the user is. |
+| user | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | The user whose banner has been updated. |
+| oldBannerURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old user's banner URL. |
+| newBannerURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new user's banner URL. |
+
+**Example :**
+```js
+client.on('userBannerUpdate', (guild, user, oldBannerURL, newBannerURL) => {
+   console.log(`A user's banner has been updated: ${oldBannerURL} => ${newBannerURL}`);
+});
+```
+
+---
+
+<h3><strong>userDiscriminatorUpdate</strong></h3><br/>
+<h4>📡 Emitted when a user's discriminator is updated.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| guild | [BaseGuild](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuild) | The guild where the user is. |
+| user | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | The user whose discriminator has been updated. |
+| oldDiscriminator | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old user's discriminator. |
+| newDiscriminator | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new user's discriminator. |
+
+**Example :**
+```js
+client.on('userDiscriminatorUpdate', (guild, user, oldDiscriminator, newDiscriminator) => {
+   console.log(`A user's discriminator has been updated: ${oldDiscriminator} => ${newDiscriminator}`);
+});
+```
+
+---
+
+<h3><strong>userUsernameUpdate</strong></h3><br/>
+<h4>📡 Emitted when a user's username is updated.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| guild | [BaseGuild](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuild) | The guild where the user is. |
+| user | [User](https://discord.js.org/#/docs/discord.js/stable/class/User) | The user whose username has been updated. |
+| oldUsername | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old user's username. |
+| newUsername | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new user's username. |
+
+**Example :**
+```js
+client.on('userUsernameUpdate', (guild, user, oldUsername, newUsername) => {
+   console.log(`A user's username has been updated: ${oldUsername} => ${newUsername}`);
+});
+```
+</details>
+
+<details><summary><strong>Voice Channel Updates <i>(extends voiceStateUpdate)</i></strong></summary><br/>
+<h3><strong>voiceChannelJoin</strong></h3><br/>
+<h4>📡 Emitted when a guild member joins a voice channel.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who joined a voice channel. |
+| channel | [BaseGuildVoiceChannel](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuildVoiceChannel) | The channel that the guild member joined. |
+
+**Example :**
+```js
+client.on('voiceChannelJoin', (member, channel) => {
+   console.log(`${member.user.tag} joined the voice channel #${channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelLeave</strong></h3><br/>
+<h4>📡 Emitted when a guild member leaves a voice channel.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who left a voice channel. |
+| channel | [BaseGuildVoiceChannel](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuildVoiceChannel) | The channel that the guild member left. |
+
+**Example :**
+```js
+client.on('voiceChannelLeave', (member, channel) => {
+   console.log(`${member.user.tag} left the voice channel #${channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelSwitch</strong></h3><br/>
+<h4>📡 Emitted when a guild member leaves a voice channel to join another.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who left a voice channel. |
+| oldChannel | [BaseGuildVoiceChannel](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuildVoiceChannel) | The channel that the guild member left. |
+| newChannel | [BaseGuildVoiceChannel](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuildVoiceChannel) | The channel that the guild member joined. |
+
+**Example :**
+```js
+client.on('voiceChannelSwitch', (member, oldChannel, newChannel) => {
+   console.log(`${member.user.tag} left the #${oldChannel} to join #${newChannel}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelSelfDeaf</strong></h3><br/>
+<h4>📡 Emitted when a guild member deafens himself.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who deafened himself. |
+
+**Example :**
+```js
+client.on('voiceChannelSelfDeaf', (member) => {
+   console.log(`${member.user.tag} deafened himself in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelSelfMute</strong></h3><br/>
+<h4>📡 Emitted when a guild member mutes himself.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who muted himself. |
+
+**Example :**
+```js
+client.on('voiceChannelSelfMute', (member) => {
+   console.log(`${member.user.tag} muted himself in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelServerDeaf</strong></h3><br/>
+<h4>📡 Emitted when a guild member is server-deafened.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been deafened. |
+
+**Example :**
+```js
+client.on('voiceChannelServerDeaf', (member) => {
+   console.log(`${member.user.tag} has been deafened in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelServerMute</strong></h3><br/>
+<h4>📡 Emitted when a guild member is server-muted.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been muted. |
+
+**Example :**
+```js
+client.on('voiceChannelServerMute', (member) => {
+   console.log(`${member.user.tag} has been muted in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelSelfUndeaf</strong></h3><br/>
+<h4>📡 Emitted when a guild member undeafens himself.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who undeafened himself. |
+
+**Example :**
+```js
+client.on('voiceChannelSelfUndeaf', (member) => {
+   console.log(`${member.user.tag} undeafened himself in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelSelfUnmute</strong></h3><br/>
+<h4>📡 Emitted when a guild member unmutes himself.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who unmuted himself. |
+
+**Example :**
+```js
+client.on('voiceChannelSelfUnmute', (member) => {
+   console.log(`${member.user.tag} unmuted himself in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelServerUndeaf</strong></h3><br/>
+<h4>📡 Emitted when a guild member is server-undeafened.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been undeafened. |
+
+**Example :**
+```js
+client.on('voiceChannelServerUndeaf', (member) => {
+   console.log(`${member.user.tag} has been server-undeafened in the voice channel #${member.voice.channel.name}.`); 
+});
+```
+
+---
+
+<h3><strong>voiceChannelServerUnmute</strong></h3><br/>
+<h4>📡 Emitted when a guild member is server-unmuted.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who has been unmuted. |
+
+**Example :**
+```js
+client.on('voiceChannelServerUnmute', (member) => {
+   console.log(`${member.user.tag} has been server-unmuted in the voice channel #${member.voice.channel.name}.`); 
+});
+```
+
+---
+
+<h3><strong>voiceChannelStreamStart</strong></h3><br/>
+<h4>📡 Emitted when a guild member starts streaming.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who started streaming. |
+
+**Example :**
+```js
+client.on('voiceChannelStreamStart', (member) => {
+   console.log(`${member.user.tag} has started streaming in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelStreamStop</strong></h3><br/>
+<h4>📡 Emitted when a guild member stops streaming.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who stopped streaming. |
+
+**Example :**
+```js
+client.on('voiceChannelStreamStop', (member) => {
+   console.log(`${member.user.tag} has stopped streaming in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelVideoStart</strong></h3><br/>
+<h4>📡 Emitted when a guild member activates his camera.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who activated his camera. |
+
+**Example :**
+```js
+client.on('voiceChannelVideoStart', (member) => {
+   console.log(`${member.user.tag} has activated his camera in the voice channel #${member.voice.channel.name}.`);
+});
+```
+
+---
+
+<h3><strong>voiceChannelVideoStop</strong></h3><br/>
+<h4>📡 Emitted when a guild member deactivates his camera.</h4>
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| member | [GuildMember](https://discord.js.org/#/docs/discord.js/stable/class/GuildMember) | The guild member who deactivated his camera. |
+
+**Example :**
+```js
+client.on('voiceChannelVideoStop', (member) => {
+   console.log(`${member.user.tag} has deactivated his camera in the voice channel #${member.voice.channel.name}.`);
 });
 ```
 </details>
