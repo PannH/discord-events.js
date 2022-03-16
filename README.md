@@ -662,7 +662,7 @@ client.on('roleColorUpdate', (role, oldHexColor, newHexColor) => {
 
 **Example :**
 ```js
-client.on('roleHoist', (role, hoist) => {
+client.on('roleHoistUpdate', (role, hoist) => {
    console.log(`A role hoist has been ${hoist ? 'enabled' : 'disabled'}.`);
 });
 ```
@@ -687,7 +687,7 @@ client.on('roleMentionableUpdate', (role, mentionable) => {
 ---
 
 <h3><strong>roleIconUpdate</strong></h3><br/>
-📡 Emitted when a role's icon is updated.
+<h4>📡 Emitted when a role's icon is updated.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -705,7 +705,7 @@ client.on('roleIconUpdate', (role, oldIconURL, newIconURL) => {
 ---
 
 <h3><strong>rolePermissionsUpdate</strong></h3><br/>
-📡 Emitted when a role "mentionable" option is enabled/disabled.
+<h4>📡 Emitted when a role "mentionable" option is enabled/disabled.</h4>
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
