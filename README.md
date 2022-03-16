@@ -77,7 +77,7 @@ client.on('channelPermissionOverwritesUpdate', (channel, oldPermissions, newPerm
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
 | channel | [BaseGuildTextChannel](https://discord.js.org/#/docs/discord.js/stable/class/BaseGuildTextChannel) | The channel whose NSFW state has been updated. |
-| nsfw | [Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | `true` if the channel is now NSFW, `false` otherwise. |
+| nsfw | [Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Wether the channel is NSFW or not. |
 
 **Example :**
 ```js
@@ -580,7 +580,7 @@ client.on('guildMemberPresenceStatusUpdate', (member, oldStatus, newStatus) => {
 ---
 
 <h3><strong>guildMemberOnline</strong></h3><br/>
-📡 Emitted when a guild member's goes online (`online`, `idle`, `dnd`).
+📡 Emitted when a guild member goes online ('online', 'idle', 'dnd').
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -598,7 +598,7 @@ client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
 ---
 
 <h3><strong>guildMemberOffline</strong></h3><br/>
-📡 Emitted when a guild member's goes offline.
+📡 Emitted when a guild member goes offline.
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -609,14 +609,14 @@ client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
 **Example :**
 ```js
 client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
-   console.log(`A guild member is now online (${newStatus})`);
+   console.log(`A guild member is now offline.`);
 });
 ```
 
 ---
 
 <h3><strong>guildMemberActivitiesUpdate</strong></h3><br/>
-📡 Emitted when a guild member's goes offline.
+📡 Emitted when the activites of a guild member are updated.
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
@@ -629,6 +629,95 @@ client.on('guildMemberOnline', (member, oldStatus, newStatus) => {
 client.on('guildMemberActivitiesUpdate', (member, oldActivites, newActivites) => {
    console.log(`The activites of a guild member have been updated :`);
    console.log(oldActivites, newActivites);
+});
+```
+</details>
+
+<details><summary><strong>Role Updates <i>(extends roleUpdate)</i></strong></summary><br/>
+<h3><strong>roleColorUpdate</strong></h3><br/>
+📡 Emitted when a role's color is updated.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| role | [Role](https://discord.js.org/#/docs/discord.js/stable/class/Role) | The role whose color has been updated. |
+| oldHexColor | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The old role's hex color. |
+| newHexColor | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The new role's hex color. |
+
+**Example :**
+```js
+client.on('roleColorUpdate', (role, oldHexColor, newHexColor) => {
+   console.log(`A role's color has been updated: ${oldHexColor} => ${newHexColor}`);
+});
+```
+
+---
+
+<h3><strong>roleHoistUpdate</strong></h3><br/>
+📡 Emitted when a role "hoist" option is enabled/disabled.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| role | [Role](https://discord.js.org/#/docs/discord.js/stable/class/Role) | The role whose "hoist" option has been enabled/disabled. |
+| hoist | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Wether the role is hoisted or not. |
+
+**Example :**
+```js
+client.on('roleHoist', (role, hoist) => {
+   console.log(`A role hoist has been ${hoist ? 'enabled' : 'disabled'}.`);
+});
+```
+
+---
+
+<h3><strong>roleMentionableUpdate</strong></h3><br/>
+📡 Emitted when a role "mentionable" option is enabled/disabled.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| role | [Role](https://discord.js.org/#/docs/discord.js/stable/class/Role) | The role whose "mentionable" option has been enabled/disabled. |
+| mentionable | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | Wether the role is mentionable or not. |
+
+**Example :**
+```js
+client.on('roleMentionableUpdate', (role, mentionable) => {
+   console.log(`The "mentionable" option of a role has been ${mentionable ? 'enabled' : 'disabled'}.`);
+});
+```
+
+---
+
+<h3><strong>roleIconUpdate</strong></h3><br/>
+📡 Emitted when a role's icon is updated.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| role | [Role](https://discord.js.org/#/docs/discord.js/stable/class/Role) | The role whose icon has been updated. |
+| oldIconURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The old role's icon URL. |
+| newIconURL | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) \| [undefined](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/undefined) | The new role's icon URL. |
+
+**Example :**
+```js
+client.on('roleIconUpdate', (role, oldIconURL, newIconURL) => {
+   console.log(`A role's icon has been updated: ${oldIconURL} => ${newIconURL}`);
+});
+```
+
+---
+
+<h3><strong>rolePermissionsUpdate</strong></h3><br/>
+📡 Emitted when a role "mentionable" option is enabled/disabled.
+
+| **Parameter** | **Type** | **Description** |
+| --- | --- | --- |
+| role | [Role](https://discord.js.org/#/docs/discord.js/stable/class/Role) | The role whose permissions have been updated. |
+| oldPermissions | Readonly<[Permissions](https://discord.js.org/#/docs/discord.js/stable/class/Permissions)> | The old role's permissions. |
+| newPermissions | Readonly<[Permissions](https://discord.js.org/#/docs/discord.js/stable/class/Permissions)> | The new role's permissions. |
+
+**Example :**
+```js
+client.on('rolePermissionsUpdate', (role, oldPermissions, newPermissions) => {
+   console.log('The permissions of a role have been updated :');
+   console.log(oldPermissions, newPermissions)
 });
 ```
 </details>
