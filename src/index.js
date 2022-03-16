@@ -1,7 +1,7 @@
 /**
  * 
  * @param {Discord.Client} client 
- * @description Initialize the 'discord-events' package.
+ * @description Initialize the 'discord-events.js' package.
  */
 module.exports.init = client => {
 

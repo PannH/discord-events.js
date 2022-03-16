@@ -1,12 +1,12 @@
 ![Discord Events](https://i.imgur.com/sKJRQXq.png)
 
 ## 📖 About
-**discord-events** is a module that gives to your Discord client many events that are much more precise.
+**discord-events.js** is a module that gives to your Discord client many events that are much more precise.
 It is useful for a **logs system** for example.
 
 ## 💻 Installation
 ```
-npm install discord-events
+npm install discord-events.js
 ```
 
 ## ❔ Help
@@ -14,13 +14,13 @@ npm install discord-events
 -  For more precise help, you can join this server: [Click to join](https://discord.gg/4b3X43JDQs), and contact the Developer  (me).
 
 ## 📚 Documentation
-> You can find below the list of all the events that **discord-events** gives to your client and how to use them.
+> You can find below the list of all the events that **discord-events.js** gives to your client and how to use them.
 > *Click on the name to expand the events.*
 
 ### Usage Example
 ```js
 const { Client } = require('discord.js');
-const events     = require('discord-events');
+const events     = require('discord-events.js');
 
 const client = new Client({intents: 32767}); // 32767 => ALL intents
 
